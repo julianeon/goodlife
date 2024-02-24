@@ -1,2 +1,0 @@
-do flask backend simul
-see about working w map data
