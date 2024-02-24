@@ -38,8 +38,9 @@ function SplashPage() {
   };
 
   return (
+    <div>
+    <MapView />
     <div className="chat-container">
-      <MapView />
       <h2>Welcome to LiveGood</h2>
       <div className="messages-container">
         {messages.length === 0 && (
@@ -61,6 +62,7 @@ function SplashPage() {
         />
         <button type="submit" className="send-button">Send</button>
       </form>
+    </div>
     </div>
   );
 }
