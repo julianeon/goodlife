@@ -10,5 +10,5 @@ Run it with this command:
 
 `npm start`
 
-Remember that it won't return data until you're running the [back end](htts://github.com/julianeon/goodlifeapi) too.
+Remember that it won't return data until you're running the [back end](https://github.com/julianeon/goodlifeapi) too.
 
