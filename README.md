@@ -4,11 +4,11 @@ This app returns neighborhood and quality of life data for various zip codes or 
 
 ## Run
 
-Run the Flask app for the back end.
+This is the React app for the front end.
 
-`flask run`
-
-Then run this React app for the front end.
+Run it with this command:
 
 `npm start`
+
+Remember that it won't return data until you're running the [back end](htts://github.com/julianeon/goodlifeapi) too.
 
