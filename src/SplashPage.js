@@ -20,7 +20,7 @@ function SplashPage() {
       setMessages(messages => [...messages, { text: `Thanks! What would you like to know about crime in ${trimmedInput}?`, sender: 'bot' }]);
     } else {
       try {
-        const response = await fetch('http://localhost:5000/question', {
+        const response = await fetch('http://127.0.0.1:5000/question', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -28,6 +28,8 @@ function SplashPage() {
           body: JSON.stringify({ question: trimmedInput, city: city }),
         });
         const data = await response.json();
+
+        console.log('data:', data)
 
         setMessages(messages => [...messages, { text: data.answer, sender: 'bot' }]);
       } catch (error) {
